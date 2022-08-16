@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+   <title>Calculator</title>
+</head>
+<body>
+   <div class="container">
+      <div class="calculator">
+         <div class="calculator-bcg">
+            <p class="tar">0</p>
+            <div class="first-line">
+               <span class="deg-left hov" role="button">DEG</span>
+               <span class="f-right hov" role="button">F-E</span>
+            </div>
+            <div class="second-line">
+               <span class="mc-left grey hov" role="button">MC</span>
+               <span class="betw grey hov" role="button">MR</span>
+               <span class="betw hov" role="button">M+</span>
+               <span class="betw hov" role="button">M-</span>
+               <span class="betw hov" role="button">MS</span>
+               <span class="m-right grey maft hov" role="button">M</span>
+            </div>
+         </div>
+         <div class="drop">
+            <div class="dropdown">
+               <input type="checkbox" id="dropdown">
+               <label for="dropdown"><img class="trans" src="./image/triangle.svg" alt="triangle" width="16" height="16"> Trigonometry</label>
+               <div class="dropdown-list">
+                  <div>2<sup><small>nd</small></sup></div>
+                  <div>sin</div>
+                  <div>cos</div>
+                  <div>tan</div>
+                  <div>hyp</div>
+                  <div>sec</div>
+                  <div>csc</div>
+                  <div>cot</div>
+               </div>
+            </div>
+            <div class="dropdown_second">
+               <input type="checkbox" id="dropdown_second">
+               <label for="dropdown_second"><img class="funct" src="./image/function.svg" alt="" width="16" height="16"> function</label>
+               <div class="dropdown_second-list">
+                  <div>|x|</div>
+                  <div><img class="floorx" src="./image/floorx.svg" alt="" width="24" height="18"></div>
+                  <div><img class="ceilx" src="./image/ceilx.svg" alt="ceil" width="24" height="18"></div>
+                  <div>rand</div>
+                  <div>→dms</div>
+                  <div>→deg</div>
+               </div>
+            </div>
+         </div>
+         <div class="buttons">
+            <div class="btn second middle">2<sup><small>nd</small></sup></div>
+            <div class="btn pi middle"><img class="numb-pi" src="./image/pi.svg" alt="" width="12" height="12"></div>
+            <div class="btn elem middle">e</div>
+            <div class="btn cancel middle">C</div>
+            <div class="btn delete middle"><img class="backsp" src="./image/backspace.svg" alt="" width="12" height="12"></div>
+            <div class="btn square middle">x<sup><small>2</small></sup></div>
+            <div class="btn fraction middle"><sup><small>1</small></sup>/x</div>
+            <div class="btn modulus middle">|x|</div>
+            <div class="btn exp middle">exp</div>
+            <div class="btn mod middle">mod</div>
+            <div class="btn rooting middle"><sup><small>2</small></sup>&radic;x</div>
+            <div class="btn left_prent middle">(</div>
+            <div class="btn right-prent middle">)</div>
+            <div class="btn mark middle">n!</div>
+            <div class="btn division middle">&#247;</div>
+            <div class="btn ussual_square middle">x<sup><small>y</small></sup></div>
+            <div class="btn number-7 dark">7</div>
+            <div class="btn number-8 dark">8</div>
+            <div class="btn number-9 dark">9</div>
+            <div class="btn increase middle">&times;</div>
+            <div class="btn ussual_squares middle">10<sup><small>x</small></sup></div>
+            <div class="btn number-4 dark">4</div>
+            <div class="btn number-5 dark">5</div>
+            <div class="btn number-6 dark">6</div>
+            <div class="btn minus middle">-</div>
+            <div class="btn log middle">log</div>
+            <div class="btn number-1 dark">1</div>
+            <div class="btn number-2 dark">2</div>
+            <div class="btn number-3 dark">3</div>
+            <div class="btn plus middle">+</div>
+            <div class="btn in middle">In</div>
+            <div class="btn plus-minus dark"><sup><small>+</small></sup>/-</div>
+            <div class="btn number-0 dark">0</div>
+            <div class="btn dot dark">,</div>
+            <div class="btn equal light">=</div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

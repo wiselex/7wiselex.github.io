@@ -1,0 +1,369 @@
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.calculator {
+  margin: 30px auto;
+  max-width: 1240px;
+  width: 100%;
+  max-height: 1500px;
+  height: 100%;
+  background-color: rgb(55, 55, 55);
+  color: white;
+  font-family: "Noto Sans";
+  & .calculator-bcg {
+    & .hov {
+      cursor: pointer;
+      &:hover {
+        filter: brightness(150%);
+        color: black;
+      }
+    }
+    & .tar {
+      text-align: right;
+      padding-top: 36px;
+      padding-bottom: 46px;
+      padding-right: 5px;
+      font-size: 44px;
+      font-weight: 700;
+      @media screen and (min-width: 767px) {
+        font-size: 64px;
+        padding-bottom: 110px;
+        padding-top: 71px;
+        padding-right: 8px;
+      }
+      @media screen and (min-width: 991px) {
+        font-size: 78px;
+        padding-right: 25px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 90px;
+      }
+    }
+    & .first-line {
+      font-size: 20px;
+      padding-bottom: 32px;
+      user-select: none;
+      @media screen and (min-width: 767px) {
+        font-size: 32px;
+        padding-bottom: 60px;
+      }
+      @media screen and (min-width: 991px) {
+        font-size: 40px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 48px;
+      }
+      & .deg-left {
+        padding-left: 10px;
+        @media screen and (min-width: 767px) {
+          padding-left: 20px;
+        }
+      }
+      & .f-right {
+        padding-left: 24px;
+        @media screen and (min-width: 767px) {
+          padding-left: 48px;
+        }
+      }
+    }
+    & .second-line {
+      padding-bottom: 30px;
+      font-size: 20px;
+      user-select: none;
+      @media screen and (min-width: 767px) {
+        font-size: 32px;
+      }
+      @media screen and (min-width: 991px) {
+        font-size: 40px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 48px;
+      }
+      & .mc-left {
+        padding-left: 15px;
+        @media screen and (min-width: 767px) {
+          padding-left: 24px;
+        }
+      }
+      & .betw {
+        padding-left: 24px;
+        @media screen and (min-width: 767px) {
+          padding-left: 48px;
+        }
+      }
+      & .m-right {
+        padding-left: 24px;
+        @media screen and (min-width: 767px) {
+          padding-left: 48px;
+        }
+      }
+      & .grey {
+        color: rgb(82, 82, 82);
+      }
+      & .maft {
+        &::after {
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-left: 3px solid rgb(82, 82, 82);
+          border-top: 3px solid rgb(82, 82, 82);
+          display: inline-block;
+          transform: rotateZ(220deg);
+          margin-bottom: 11px;
+          margin-left: 1px;
+          @media screen and (min-width: 767px) {
+            width: 10px;
+            height: 10px;
+            border-left: 4px solid rgb(82, 82, 82);
+            border-top: 4px solid rgb(82, 82, 82);
+            margin-bottom: 17px;
+            margin-left: 4px;
+          }
+          @media screen and (min-width: 1200px) {
+            margin-bottom: 27px;
+          }
+        }
+      }
+    }
+  }
+}
+.trans {
+  transform: rotateZ(269deg);
+  @media screen and (min-width: 767px) {
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (min-width: 991px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.funct {
+  @media screen and (min-width: 767px) {
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (min-width: 991px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.floorx {
+  @media screen and (min-width: 991px) {
+    width: 80px;
+    height: 52px;
+    margin-top: 13px;
+  }
+}
+.ceilx {
+  @media screen and (min-width: 991px) {
+    width: 80px;
+    height: 52px;
+    margin-top: 13px;
+  }
+}
+.numb-pi {
+  @media screen and (min-width: 767px) {
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (min-width: 991px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.backsp {
+  @media screen and (min-width: 767px) {
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (min-width: 991px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.drop {
+  background-color: rgb(47, 47, 47);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  @media screen and (min-width: 767px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 991px) {
+    font-size: 40px;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 8px;
+    &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+      transform: rotateZ(45deg);
+      transition: all 0.3s;
+      @media screen and (min-width: 991px) {
+        width: 16px;
+        height: 16px;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        margin-left: 7px;
+      }
+    }
+  }
+  #dropdown {
+    display: none;
+    &:checked {
+      & ~ .dropdown-list {
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        gap: 6px;
+        align-items: center;
+        @media screen and (min-width: 767px) {
+          padding-top: 10px;
+          gap: 10px;
+        }
+        @media screen and (min-width: 991px) {
+          padding-top: 30px;
+          gap: 30px;
+          padding-left: 20px;
+        }
+      }
+      & ~ label::after {
+        transform: rotateZ(-135deg);
+      }
+    }
+  }
+  &-list {
+    display: none;
+    position: absolute;
+    top: 20px;
+  }
+}
+.dropdown_second {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 15px;
+  @media screen and (min-width: 767px) {
+    padding-left: 20px;
+    font-size: 24px;
+  }
+  @media screen and (min-width: 991px) {
+    font-size: 40px;
+    padding-left: 25px;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+      transform: rotateZ(45deg);
+      transition: all 0.3s;
+      @media screen and (min-width: 991px) {
+        width: 16px;
+        height: 16px;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        margin-left: 7px;
+      }
+    }
+  }
+  #dropdown_second {
+    display: none;
+    &:checked {
+      & ~ .dropdown_second-list {
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        gap: 6px;
+        align-items: center;
+        @media screen and (min-width: 767px) {
+          padding-top: 15px;
+          gap: 10px;
+          padding-left: 25px;
+        }
+        @media screen and (min-width: 991px) {
+          padding-top: 17px;
+          gap: 30px;
+          padding-left: 20px;
+        }
+      }
+      & ~ label::after {
+        transform: rotateZ(-135deg);
+      }
+    }
+  }
+  &-list {
+    display: none;
+    position: absolute;
+    top: 20px;
+  }
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "second pi elem cancel delete"
+    "square fraction modulus exp mod"
+    "rooting left_prent right_prent mark division"
+    "ussual_square number_7 number_8 number_9 increase"
+    "ussual_squares number_4 number_5 number_6 minus"
+    "log number_1 number_2 number_3 plus"
+    "in plus-minus number_0 dot equal";
+  grid-gap: 2px;
+  & .dark {
+    background-color: black;
+  }
+  & .middle {
+    background-color: rgb(32, 32, 32);
+  }
+  & .light {
+    background-color: rgb(85, 85, 85);
+  }
+  & .btn {
+    max-width: 260px;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    @media screen and (min-width: 767px) {
+      width: 100%;
+      height: 67px;
+      line-height: 67px;
+      font-size: 24px;
+    }
+    @media screen and (min-width: 991px) {
+      font-size: 32px;
+      height: 97px;
+      line-height: 97px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 40px;
+      height: 120px;
+      line-height: 120px;
+    }
+    &:hover {
+      filter: brightness(120%);
+    }
+    &:active {
+      filter: brightness(90%);
+    }
+  }
+}
